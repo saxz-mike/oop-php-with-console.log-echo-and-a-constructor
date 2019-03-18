@@ -3,7 +3,6 @@
 //creation of classes                      //
 // console.log in javascript using echo    //
 // using a constructor                     //               
-// php is sequential                       //
 //Author:  Michael W                       //
 /////////////////////////////////////////////
 
@@ -24,6 +23,8 @@ public function __construct($name,$principle,$Irate,$time){
  $this->principle=$principle;
  $this->Irate=$Irate;
  $this->time=$time;
+ $message="all time should be entered in months";
+ echo "<script>alert('$message')</script>";
  echo "<script>console.log('$name created')</script>";
 
 
@@ -31,7 +32,6 @@ public function __construct($name,$principle,$Irate,$time){
 
 //calculate interest class
 public function calcinterest(){
-    $message="all time should be entered in months";
     $message2="created";
     $Iloan=$this->principle * $this->Irate * $this->time/12;
     echo "<script>console.log('loan interest is $Iloan')</script>";
